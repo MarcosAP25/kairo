@@ -17,18 +17,13 @@
                     @click="open = !open"
                 />
                 <div class="flex items-center ms-auto">
-                    <UButton
-                        icon="i-lucide-settings"
-                        color="neutral"
-                        variant="ghost"
-                        aria-label="Settings"
-                        
-                    />
+                   <ChatSettings />
                 </div>
             </div>
             
             <!-- Content principal -->
-            <div class="flex p-4 size-full items-center justify-center">
+            <div class="flex flex-col gap-4 p-4 size-full items-center justify-center">
+                <h2 class="text-start text-2xl font-bold">Hi, there... How can I help you today?</h2>
                 <ChatPromt></ChatPromt>
             </div>
         </div>
