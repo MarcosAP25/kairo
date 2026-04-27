@@ -3,8 +3,8 @@
 const loadingSubmit = ref(false);
 
 const items = ref([
-   "DeepSeek4-flash",
-   "DeepSeek4-pro" 
+   "DeepSeek-v4-flash",
+   "DeepSeek-v4-pro" 
 ]);
 const defaultModel = ref("DeepSeek4-flash");
 
@@ -19,6 +19,10 @@ const handleSubmit = () => {
         <UChatPrompt 
             variant="soft" 
             placeholder="Escriba su mensaje aquí..."
+            :maxRows="8"
+            :ui="{
+                base: 'max-h-40 overflow-y-auto'
+            }"
         >
             
             
